@@ -1,0 +1,29 @@
+/*Selector de id*/
+#tituloPrincipal {
+    color: #66ffff;
+    font-size: 50px;
+}
+
+.parrafoNegrita{
+    font-weight: bold;
+    color: darkblue;
+    
+}
+.parrafoEspecial{
+    font-family: cursive;
+    
+}
+.prioridad{
+    color: red;
+    
+}
+.prioridad2{
+    color: purple;
+    
+}
+.prioridad1{
+    color: red;
+}
+p{
+    word-spacing: 8px;
+}

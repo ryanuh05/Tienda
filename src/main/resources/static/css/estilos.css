@@ -27,3 +27,42 @@
 p{
     word-spacing: 8px;
 }
+.ejemploCajas{
+    border: 2px solid black;
+    text-align: center;
+    /*un parametro aplica para los dos lados*/
+    /*padding-top: 10px;*/
+    /*4 parametros = top - right - bottom - left*/
+    margin: 0 auto;
+    padding: 20px 10px 15px 30px;
+   
+  
+    
+}
+a:link{
+    color: crimson;
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    margin: 10px;
+    
+    border-radius: 25px;
+    
+    
+    
+}
+a:visited{
+    color: black;
+   
+}
+a:hover{
+    color: white;
+    background-color: green;
+    transition: 1.5s;
+    
+    
+}
+a:active{
+  color: white;
+background-color: purple;
+
+}

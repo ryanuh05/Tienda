@@ -17,7 +17,7 @@ public class IndexController {
        // model.addAttribute("attribute", "value");
         return "index";
     }
-    @RequestMapping("/contaco")
+    @RequestMapping("/contacto")
     public String paginaContacto(Model model) {
        // model.addAttribute("attribute", "value");
         return "info";

@@ -81,6 +81,23 @@ public class PruebasController {
         model.addAttribute("precioSup", precioSup);
         return "/pruebas/listado2";
     }
+     @GetMapping("/practica")
+    public String practica (Model model) {
+        var productos = productoService.getProductos(false);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        return "/pruebas/practica";
+    }
     
+     @PostMapping("/practica")
+    public String consultaQuery4(@RequestParam(value = "existenciaInf") int existenciaInf,
+            @RequestParam(value = "existenciaSup") int existenciaSup, Model model) {
+       List<Producto> productos = productoService.findByExistenciasBetweenOrderByDescripcion(existenciaInf, existenciaSup);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("existenciaInf", existenciaInf);
+        model.addAttribute("existenciaSup", existenciaSup);
+        return "/pruebas/practica";
+    }
 }
 

@@ -17,10 +17,10 @@ public class IndexController {
        // model.addAttribute("attribute", "value");
         return "index";
     }
-    @RequestMapping("/contacto")
-    public String paginaContacto(Model model) {
-       // model.addAttribute("attribute", "value");
-        return "info";
-    }
+//    @RequestMapping("/contacto")
+//    public String paginaContacto(Model model) {
+//       // model.addAttribute("attribute", "value");
+//        return "info";
+//    }
     
 }
